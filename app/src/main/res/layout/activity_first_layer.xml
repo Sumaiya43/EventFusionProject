@@ -76,6 +76,8 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
+
+
     <ImageView
         android:layout_width="82dp"
         android:layout_height="69dp"
@@ -84,6 +86,15 @@
         android:layout_marginTop="65dp"
         android:src="@drawable/ef" />
 
+    <TextView
+        android:id="@+id/forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:text="Forgotten Password?"
+        android:textColor="#FFFFFF" />
 
 
 </RelativeLayout>
