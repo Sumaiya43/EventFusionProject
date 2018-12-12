@@ -1,3 +1,10 @@
 <resources>
+
     <string name="app_name">EventFusion</string>
+
+        <string name="open">Open</string>
+        <string name="close">Close</string>
+        <string name="open1">Open</string>
+        <string name="close1">Close</string>
+
 </resources>

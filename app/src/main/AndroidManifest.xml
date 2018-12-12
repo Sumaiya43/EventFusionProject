@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserRegistration" />
+        <activity android:name=".CreateEvent" />
+        <activity android:name=".DrawerOptionMenu"></activity>
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstLayer"
-    android:background="@drawable/wallpaper1">
+    android:background="@drawable/wallpaper3">
 
     <EditText
         android:id="@+id/emailid"
@@ -95,6 +95,16 @@
         android:layout_marginBottom="95dp"
         android:text="Forgotten Password?"
         android:textColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:foregroundGravity="center"
+        android:visibility="gone"
+        />
 
 
 </RelativeLayout>

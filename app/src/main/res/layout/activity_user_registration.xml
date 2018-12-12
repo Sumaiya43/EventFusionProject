@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     tools:context=".UserRegistration"
     android:orientation="vertical"
-    android:background="@drawable/wallpaper1"
+    android:background="@drawable/wallpaper3"
     >
 
 <LinearLayout
@@ -21,7 +21,7 @@
     tools:context=".UserRegistration"
     android:orientation="vertical"
     android:weightSum="10"
-    android:background="@drawable/wallpaper1"
+    android:background="@drawable/wallpaper3"
     >
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:text="User Registration"
             android:textSize="30dp"
             android:gravity="center"
-            android:background="#c40b0b"
+            android:background="#000"
             android:textColor="#efebe8"
             android:textStyle="italic"/>
 
@@ -106,13 +106,7 @@
         android:textColor="#fffcf9"
         android:inputType="number"/>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:visibility="gone"/>
+
 
 
     <Button
