@@ -1,40 +1,43 @@
 package com.teamfly.eventfusion2018;
 
+import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class CreateEvent extends AppCompatActivity {
+public class CreateEvent extends Fragment {
 
-    TextView text1, text2, text3, text4, text5, text6, text7, text8;
-    EditText edit1, edit2, edit3, edit4, edit5, edit6, edit7;
-    Button button3;
 
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_create_event,null);
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_event);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        text1 = findViewById(R.id.text1);
-        text2 = findViewById(R.id.text2);
-        text3 = findViewById(R.id.text3);
-        text4 = findViewById(R.id.text4);
-        text5 = findViewById(R.id.text5);
-        text6 = findViewById(R.id.text6);
-        text7 = findViewById(R.id.text7);
-        text8 = findViewById(R.id.text8);
+        view.findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        edit1 = findViewById(R.id.edit1);
-        edit2 =  findViewById(R.id.edit2);
-        edit3 = findViewById(R.id.edit3);
-        edit4 =  findViewById(R.id.edit4);
-        edit5 = findViewById(R.id.edit5);
-        edit6 =  findViewById(R.id.edit6);
-        edit7 = findViewById(R.id.edit7);
 
-        button3 = findViewById(R.id.button3);
+                Toast.makeText(getActivity(), "You are inside create event", Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 }
+
+
+

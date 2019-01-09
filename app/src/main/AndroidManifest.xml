@@ -13,15 +13,21 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".FirstLayer">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".UserRegistration" />
         <activity android:name=".CreateEvent" />
-        <activity android:name=".DrawerOptionMenu"></activity>
+        <activity android:name=".SharedEvent" />
+        <activity android:name=".SetUpActivity">
+
+
+        </activity>
     </application>
 
 </manifest>
